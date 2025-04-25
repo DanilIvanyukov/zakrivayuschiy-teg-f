@@ -47,7 +47,6 @@
 .header__subtitle {
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   text-transform: uppercase;
-  line-height: 23px;
 }
 
 .main {
@@ -56,7 +55,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 45px;
+  gap: 49px;
   inline-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
 }
 
@@ -66,17 +65,15 @@
   justify-content: center;
   background-color: #fff;
   inline-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
-  border-block-end: 2px solid #000;
 }
 
 .card__title {
   font-size: var(--card-font-size, 18px);
-  padding: 4px 11px;
   font-variation-settings: "wght" 700;
-  line-height: 22px;
-  align-items: start;
-  border: 2px solid #000;
-  border-block-end: none;
+  padding: 5px 10px;
+  border-inline-start: 2px #000 solid;
+  border-inline-end: 2px #000 solid;
+  border-block-start: 2px #000 solid;
 }
 
 .card__image {
@@ -87,18 +84,19 @@
   border: 2px solid #000;
 }
 
-.card__border {
-  border-block-end: 2px solid #000;
-  border-inline-start: 2px solid #000;
-  border-inline-end: 2px solid #000;
-}
-
 .card__text {
-  font-size: var(--card-font-size, 18px);
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 27px;
-  padding: 27px 25px;
+  padding: 25px;
+  border-inline-start: 2px #000 solid;
+  border-inline-end: 2px #000 solid;
+}
+
+.card__text p {
+  font-size: var(--card-font-size);
+  font-family: var(--main-font);
   line-height: 21px;
 }
 
@@ -106,7 +104,10 @@
   display: flex;
   justify-content: end;
   padding-inline-end: 25px;
-  padding-block-end: 25px;
+  padding-block-end: 26px;
+  border-inline-start: 2px #000 solid;
+  border-inline-end: 2px #000 solid;
+  border-block-end: 2px #000 solid;
 }
 
 .card__like-button {
@@ -118,38 +119,57 @@
   font-family: var(--title-font)
 }
 
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__button {
+  inline-size: 337px;
+  min-inline-size: 306px;
+  block-size: 55px;
+  border: 2px #000 solid;
+  margin: 50px 0 103px;
+}
+
 /* фильтр */
 
-image__filter-brightness {
-  filter: brightness(10%);
+.image__filter-grayscale {
+  filter: grayscale(80%) brightness(1.3);
 }
 
-image__filter-contrast {
-  filter: contrast(200%)
+.image__filter-contrast {
+  filter: contrast(250%)
 }
 
-image__filter-sepia {
+.image__filter-sepia {
   
 }
 
-image__filter- {
+.image__filter-brightness {
   
 }
 
-image__filter- {
+.image__filter- {
   
 }
 
-image__filter-blur {
+.image__filter-blur {
   
 }
 
-image__filter- {
+.image__filter- {
   
 }
 
 @media (width <= 375px) {
-  .card__text {
-    padding: ;
+
+  .main {
+    gap: 51px;
+  }
+
+  .card__title {
+    padding: 3px 10px 5px;
   }
 }
