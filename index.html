@@ -377,41 +377,41 @@
             </button>
           </div>
       </article>
-    </main>
-    <footer class="footer">
-      <button class="button footer__button-save" type="button" onclick="window['save'].showModal()" aria-controls="save">
-        <span class="button__text button__save-content">
-          <svg class="floppy" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
-            <use href="./svg/floppy.svg#floppy"></use>
-          </svg>
-          Сохранить на память
-        </span>
-      </button>
-      <dialog id="save" class="dialog__save">
-        <div class="dialog__content">
-            <svg
-              fill="transparent"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 40 40"
-              width="39"
-              height="39"
-            >
-              <use
-                class="floppy__big"
-                href="./svg/floppy.svg#floppy"
-              ></use>
+      <div class="block__save-button">
+        <button class="button block__button-save" type="button" onclick="window['save'].showModal()" aria-controls="save">
+          <span class="button__text button__save-content">
+            <svg class="floppy" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+              <use href="./svg/floppy.svg#floppy"></use>
             </svg>
-          <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
-        </div>
-        <button
-          type="submit"
-          onclick="window['save'].close()"
-          class="button dialog__button"
-        >
-          <span class="button__text">ок</span>
+            Сохранить на память
+          </span>
         </button>
-      </dialog>
-    </footer>  
+        <dialog id="save" class="dialog__save">
+          <div class="dialog__content">
+              <svg
+                fill="transparent"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 40 40"
+                width="39"
+                height="39"
+              >
+                <use
+                  class="floppy__big"
+                  href="./svg/floppy.svg#floppy"
+                ></use>
+              </svg>
+            <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
+          </div>
+          <button
+            type="submit"
+            onclick="window['save'].close()"
+            class="button dialog__button"
+          >
+            <span class="button__text">ок</span>
+          </button>
+        </dialog>
+      </div>  
+    </main>
     <script src="./scripts/like.js"></script>
   </body>
 </html>

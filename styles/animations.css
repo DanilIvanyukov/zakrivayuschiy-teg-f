@@ -9,7 +9,7 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
-@keyframes sparks {
+@keyframes show-sparks {
   from {
     opacity: 1;
   }
@@ -19,7 +19,7 @@
   }
 }
 
-@keyframes heart {
+@keyframes scale-heart {
   from {
     scale: 1;
   }
