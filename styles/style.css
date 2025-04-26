@@ -98,14 +98,14 @@
     1px -1px 0 #fff,
     -1px 1px 0 #fff,
     1px 1px 0 #fff;
-  mix-blend-mode: hard-light; 
+  mix-blend-mode: hard-light;
 }
 
 @supports (( -webkit-text-stroke: 1px #fff ) or ( text-stroke: 1px #fff )) {
   .card__image-label {
     text-shadow: none;
     -webkit-text-stroke: 1px #fff;
-    text-stroke: 1px #fff; 
+    text-stroke: 1px #fff;
   }
 }
 
@@ -371,7 +371,7 @@
 
 .like-icon.is-liked .heart {
   transform-origin: center;
-  animation: heart 0.3s ease-in 0.3s; 
+  animation: heart 0.3s ease-in 0.3s;
 }
 
 
