@@ -316,6 +316,7 @@
 
 .contour {
   fill: var(--heart-contour-color);
+  transition: fill 0.1s linear;
 }
 
 .main-body {
@@ -365,16 +366,12 @@
 
 .like-icon.is-liked .main-body {
   fill: var(--heart-main-color);
-  transition: fill 0.3s linear 0s;
+  transition: fill 0.3s linear 0.05s;
 }
 
 .like-icon.is-liked .core {
   fill: var(--heart-main-color);
-  transition: fill 0.3s linear 0.05s;
-}
-
-.like-icon.is-liked .sparks {
-  animation: show-sparks 0.3s ease-in 0.1s 1;
+  transition: fill 0.3s linear 0s;
 }
 
 .like-icon.is-liked .heart {
@@ -382,7 +379,11 @@
   animation: scale-heart 0.3s ease-in 0.1s;
 }
 
-@media (width <= 425px) {
+.like-icon.is-liked .sparks {
+  animation: show-sparks 0.3s ease-in 0.3s;
+}
+
+@media (width <= 768px) {
   .button__save-content {
     flex-direction: column;
   }
